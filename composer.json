@@ -1,0 +1,17 @@
+{
+  "name": "stagem/magento-customer-date-fix",
+  "type": "magento-module",
+  "license":"MIT Licence",
+  "description":"Magento 1 module fix a problem with created_at field during new customer creation.",
+  "authors":[{
+    "name":"Serhii Popov",
+    "email":"popow.serhii@gmail.com"
+  }],
+  "extra": {
+    "map": [
+      ["app/etc/modules/Stagem_CustomerDate.xml", "app/etc/modules/Stagem_CustomerDate.xml"],
+      ["app/code/local/Stagem/CustomerDate/", "app/code/local/Stagem/CustomerDate/"]
+
+    ]
+  }
+}

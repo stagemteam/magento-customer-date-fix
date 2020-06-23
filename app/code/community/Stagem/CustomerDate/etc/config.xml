@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Stagem_CustomerDate>
+            <version>0.0.1</version>
+        </Stagem_CustomerDate>
+    </modules>
+    <global>
+        <helpers>
+            <stagem_customerDate>
+                <class>Stagem_CustomerDate_Helper</class>
+            </stagem_customerDate>
+        </helpers>
+
+        <events>
+            <customer_save_before>
+                <observers>
+                    <stagem_customerDate_customer_date_created_at>
+                        <type>singleton</type>
+                        <class>Stagem_CustomerDate_Model_Observer</class>
+                        <method>hookToChangeCustomerCreatedAt</method>
+                    </stagem_customerDate_customer_date_created_at>
+                </observers>
+            </customer_save_before>
+        </events>
+    </global>
+
+</config>

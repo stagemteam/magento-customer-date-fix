@@ -10,7 +10,7 @@
   "extra": {
     "map": [
       ["app/etc/modules/Stagem_CustomerDate.xml", "app/etc/modules/Stagem_CustomerDate.xml"],
-      ["app/code/community/Stagem/CustomerDate/", "app/community/local/Stagem/CustomerDate/"]
+      ["app/code/community/Stagem/CustomerDate/", "app/code/community/Stagem/CustomerDate/"]
     ]
   }
 }
